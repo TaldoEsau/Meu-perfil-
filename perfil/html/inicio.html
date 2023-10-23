@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correção</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="tlou.png" alt="perfil">
+
+        <center><h1>Esaú</h1></center>
+     <div class="tabs">
+        <div class="tab active" onclick="showTab('info')">Informações Pessoais</div>
+        <div class="tab" onclick="showTab('sobre')">Sobre Mim</div>
+        <div class="tab" onclick="showTab('contato')">Contato</div>
+     </div>
+
+     <div class="tab-content active" id="info">
+        <h2>Informações Pessoais</h2>
+        <p>Nome: Esau Machado de Santana</p>
+        <p>Idade: 20</p>
+        <p>Sexo: Macho</p>
+     </div>
+
+     <div class="tab-content" id="sobre">
+        <a href="facebook.com"> teste</a>
+        <h2>Sobre Mim</h2>
+        <p>Sou estudante de ADS e faço lives na TWITCH</p>
+
+     </div>
+
+     <div class="tab-content" id="contato">
+        <h2>Contato</h2>
+        <p>Email:esau.035@gmail.com</p>
+        <p>Número: 17997577374</p>
+     </div>
+    </div>
+     <script>
+        function showTab(tabId){
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+            tab.classList.remove('active');
+          });
+          
+          tabContents.forEach(content => {
+            content.classList.remove('active');
+          });
+          
+          const selectedTab = document.querySelector(`#${tabId}`);
+          selectedTab.classList.add('active');
+          
+          const selectedTabButton = document.querySelector(`.tab[data-tab="${tabId}"]`);
+          selectedTabButton.classList.add('active');
+        }
+     </script>
+     </div>
+     <!--<div style="padding: 25px"></div>
+        
+    <center><h1>SOBRE MIM</h1></center>
+    <center><h3><a href="file:///D:/Facul/2°%20Semestre/1°%20Bimestre/Desenvolvimento%20de%20Interface%20Web%20(DIW)/perfil/html/parte1.html">Um pouco sobre o Taldo SaTis</a></h3></center>
+    <div style="padding: 25px"></div>
+
+    <center><h1>AULAS DO SEGUNDO SEMESTRE</h1></center>
+    <center><h3><a href="file:///D:/Facul/2°%20Semestre/1°%20Bimestre/Desenvolvimento%20de%20Interface%20Web%20(DIW)/perfil/html/parte2.html">Segundo semestre das turma A e B</a></h3></center>
+    <div style="padding: 25px"></div>
+
+    <center><h1>PORTIFÓLIO</h1></center>
+    <center><h3><a href="file:///D:/Facul/2°%20Semestre/1°%20Bimestre/Desenvolvimento%20de%20Interface%20Web%20(DIW)/perfil/html/parte3.html">Um pouco de Portifólio</a></h3></center>
+    <div style="padding: 25px"></div>-->
+
+</body>
+</html>

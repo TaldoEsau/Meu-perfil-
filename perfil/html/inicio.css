@@ -1,0 +1,55 @@
+body{
+    background-color: #83c3cf;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.tab{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 156, 247);
+    border-bottom: none;
+    background-color: rgb(0, 156, 247);
+}
+
+.tab.active{
+    background-color: rgb(0, 156, 247);
+    border-bottom: rgb(0, 156, 247);
+}
+
+.tab:houver{
+    background-color: whitesmoke;
+}
+
+.profile p {
+    margin: 10px 0;
+  }
+
+  .profile h1 {
+    margin: 0;
+  }
+  
+
+.tabs {
+    display: flex;
+    border-bottom: 0px solid rgb(0, 156, 247);
+    margin-bottom: 20px;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .tab.content {
+    display: none;
+    padding: 20px;
+    border: 1px solid yellow;
+    background-color: yellowgreen;
+  }
